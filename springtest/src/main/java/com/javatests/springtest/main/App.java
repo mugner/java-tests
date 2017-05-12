@@ -1,4 +1,4 @@
-package org.springtest;
+package com.javatests.springtest.main;
 
 /**
  * Hello world!
