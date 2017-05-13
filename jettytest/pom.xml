@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.java-tests</groupId>
-		<artifactId>root</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<artifactId>springtest</artifactId>
-	<name>springtest</name>
-  	<packaging>jar</packaging>	
-
-	<build>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.java-tests</groupId>
+    <artifactId>root</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>jettytest</artifactId>
+  <name>jettytest</name>
+  <packaging>jar</packaging>
+    
+  	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -20,13 +20,13 @@
 				<configuration>
 					<transformers>
 						<transformer
-							implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-							<mainClass>com.javatests.springtest.main.Main</mainClass>
+								implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+							<mainClass>org.jettytest.HelloWorld</mainClass>
 						</transformer>
 					</transformers>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
+  
 </project>
